@@ -23,7 +23,7 @@ const ingredients = ["Bacon", "Lettuce", "Tomato"];
 const ingredientsString = "Bacon+Lettuce+Tomato";
 const itemString = "Apple+Orange+Pear";
 
-describe("Testing createRecipeString()", () => {
+xdescribe("Testing createRecipeString()", () => {
   it("Should be defined", () => {
     expect(createRecipeString(ingredients)).toBeDefined();
   });
@@ -58,7 +58,7 @@ xdescribe("Testing getFirstAndLastItems()", () => {
   });
 });
 
-xdescribe("Testing totalScores()", () => {
+describe("Testing totalScores()", () => {
   it("Should be defined", () => {
     expect(totalScores(scores)).toBeDefined();
   });

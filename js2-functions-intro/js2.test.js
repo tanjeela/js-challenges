@@ -101,7 +101,7 @@ xdescribe("calculateLifeTimeSupply() tests", () => {
   });
 });
 
-describe("getGrade() tests", () => {
+xdescribe("getGrade() tests", () => {
   it("Should have a return", () => {
     expect(getGrade(70)).toBeDefined();
   });
@@ -144,7 +144,7 @@ describe("getGrade() tests", () => {
   });
 });
 
-describe("calculateAreaOfCircle() tests", () => {
+xdescribe("calculateAreaOfCircle() tests", () => {
   it("Should have a return", () => {
     expect(calculateAreaOfCircle(3)).toBeDefined();
   });
@@ -164,7 +164,7 @@ describe("calculateAreaOfCircle() tests", () => {
   });
 });
 
-xdescribe("getStudentSummary() tests", () => {
+describe("getStudentSummary() tests", () => {
   it("Should have a return", () => {
     expect(getStudentSummary(70, "John")).toBeDefined();
   });

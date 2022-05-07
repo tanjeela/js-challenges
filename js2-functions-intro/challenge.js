@@ -1,3 +1,7 @@
+// FUNCTIONS ARE A SET OF CODE THAT PERFORMS A TASK
+// CAN CREATE A FUNCTION TO ISOLATE EVERYTHING WE WANT TO DO
+
+
 /* JS2 builds on the previous challenges and adds the use of functions with parameters */
 
 /* 
@@ -173,5 +177,26 @@ return parseFloat(areaOfCircleToFixedDecimal);
  * @param {string} name John
  */
 export const getStudentSummary = (score, name) => {
-  /* Write your code here */
+  if (score > 100 || score < 0 || typeof score !== "number") {
+    return `My apologies ${name}, there's been an error in processing your grade.`;
+  }
+  if (score >= 80) {
+    return `Congratulation ${name}! You achieved a grade of A.`;
+  }
+  else if (score >= 70) {
+    return `Well done ${name}! You achieved a grade of B.`;
+  }
+  else if (score >= 60) {
+    return `Nicely done ${name}! You achieved a grade of C.`;
+  }
+  else if (score >= 50) {
+    return `That's okay ${name}. You achieved a grade of D.`;
+  }
+  else if (score >= 40) {
+    return `Too bad ${name}. You achieved a grade of E.`;
+  }
+  else {
+    return `Sorry ${name}. You achieved a grade of F. There's always next year.`;
+  }
+  
 };

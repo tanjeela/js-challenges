@@ -20,20 +20,28 @@
  * @param {string[]} ingredientsArr ["Bacon","Lettuce","Tomato"]
  * @return {string} "Bacon+Lettuce+Tomato"
  */
-
+// The .join() allows you to join an arrow with whatever symbol, word, value you pass in the parameters.
 export const createRecipeString = (ingredientsArr) => {
-  return;
+  const ingredientSummary = ingredientsArr.join("+");
+  return (ingredientSummary);
 };
 
 /**
  * A function that takes Array of Items and returns a NEW ARRAY with the first and last item in it.
+ * BREAKDOWN
+ * returns new array for first and last items
+ * need to create array for both items?
  *
  * @param {string[]} itemsArr ["Tony","John","Dave"]
  * @return {string[]} ["Tony","Dave"]
  */
 
 export const getFirstAndLastItems = (itemsArr) => {
-  return;
+  const firstArray = itemsArr[0];
+  const lastArray = itemsArr[itemsArr.length -1];
+  // return firstArray, lastArray;
+  // need to put square brackets around the variables
+  return [firstArray, lastArray];
 };
 
 /**
@@ -44,7 +52,22 @@ export const getFirstAndLastItems = (itemsArr) => {
  */
 
 export const totalScores = (scoreArr) => {
-  return;
+  let sumOfScoreArr = 0 //the sum is initialised to 0
+// scoreArr.length = 3 (initial index is set to 0)
+// last item is index 3 which is < 4
+
+  for (let i = 0; i <scoreArr.length; i+=1)
+  {
+    sumOfScoreArr += scoreArr[i]
+    // notes to self:
+    // What does this mean?
+    // basically we are initalising the sumOfScoreArr to equal 0
+    // Then the iteration [i] 
+    // sumOfScoreArr: 0 + 1 
+    // sumOfScoreArr: 1 + 2
+    // sumOfScoreArr: 3 + 3
+  }
+  return sumOfScoreArr;
 };
 
 /**
@@ -52,14 +75,15 @@ export const totalScores = (scoreArr) => {
  */
 
 /**
- * A function that takes an number and returns the total of the range of numbers between 0 and the given number.
+ * A function that takes a number and returns the total of the range of numbers between 0 and the given number.
  * e.g. 10 => 0+1+2+3+4+5+6+7+8+9+10 = 55.
  *
  * @param {number} rangeMax 10
  * @return {number} 55
  */
-
+// The range is the difference between the highest and lowest values in a set of numbers.
 export const totalRange = (rangeMax) => {
+  
   return;
 };
 

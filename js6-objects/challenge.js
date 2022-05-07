@@ -96,8 +96,12 @@ export const accessGivenKey = (object, key) => {
  * @returns {string} An address string for a shipping label
  */
 export const getUserAddress = (user) => {
-  /* Write code here */
+ 
 };
+
+
+
+
 
 /**
  * A function that given a customer for the restaurant with a list of known allergies and a list of allergens in an
@@ -108,7 +112,15 @@ export const getUserAddress = (user) => {
  * @return {{id: number, name: string, allergies: string[], safeAllergens: string[]}} customer
  */
 export const setSafeAllergens = (customer, allergenList) => {
-  /* Write code here */
+  const safeAllergens = allergenList.filter((a) => {
+    return !customer.allergies.includes(a);
+  });
+
+  customer.safeAllergens = safeAllergens;
+
+  return customer;
+};
+
 };
 
 /* Expert Challenge */
